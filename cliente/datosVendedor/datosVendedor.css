@@ -1,0 +1,90 @@
+#arriba-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#arriba-datos img{
+    width: 44%;
+    margin-right: 30px;
+    border-radius: 13px;
+    margin-top: 15px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+#productos-vendedor{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: center;
+    margin-top: 05px;
+}
+
+.producto-perfil{
+    margin-right: 20px;
+    margin-bottom: 15px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.producto-perfil img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#arriba-conteiner button{
+    width: 80%;
+    height: 60px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#arriba-conteiner h4{
+    color: rgb(81, 45, 239);
+}
+
+#arriba-conteiner h4::after{
+    content: "_________________________________________________________";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(49, 49, 210);
+    margin-top: 10px;
+}
+
+#abajo-datos h2{
+    margin: 0;
+}
+
+#usuario{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#usuario button{
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#usuario i{
+    margin-right: 10px;
+}

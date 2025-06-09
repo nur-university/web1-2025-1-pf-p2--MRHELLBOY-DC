@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Mensaje</title>
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="enviarMensaje.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!--Inciar Sesion, Usuario y otros-->
+        <img src="../../imagenes/carritoNegro.png" alt="logo.png">
+        <h1>HermanPlace</h1>    
+        <div id="opciones">
+            <a href="../../index.html">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Vender</a>
+        </div>
+        <div id="usuario">
+            <i class="fa-solid fa-circle-user"></i>
+            <button onclick="cambio()">Iniciar Sesion</button>
+        </div>
+    </header>
+    <main>
+         <article class="datos">
+            <p>Remy Caja Llena</p>
+            <span>
+            <button  onclick="cambio()" class="boton-datos">Datos del vendedor</button>
+            <button onclick="cambio2()" class="boton-datos">Ver Productos del vendedor</button>
+            <button onclick="cambio3()" class="boton-datos">Eliminar</button>
+            </span>
+         </article>
+        <div id="caja">
+
+            <article class="izquierda-msg">
+                <img class="imgaen" src="../../imagenes/se.jpg" alt="foto.png">
+                <span>Aca va el texto si sñeor claro que si</span>
+            </article>
+            <article class="derecha-msg">
+                <span>Aca va el texto si sñeor claro que si</span>
+                <img class="imgaen" src="../../imagenes/se.jpg" alt="foto.png">
+            </article>
+            <article class="izquierda-msg">
+                <img class="imgaen" src="../../imagenes/se.jpg" alt="foto.png">
+                <span>Aca va el texto si sñeor claro que si</span>
+            </article>
+            <article class="derecha-msg">
+                <span>Aca va el texto si sñeor claro que si</span>
+                <img class="imgaen" src="../../imagenes/se.jpg" alt="foto.png">
+            </article>
+            <article class="izquierda-msg">
+                <img class="imgaen" src="../../imagenes/se.jpg" alt="foto.png">
+                <span>Aca va el texto si sñeor claro que si</span>
+            </article>
+            <article class="escribir-msg">
+                <input type = "text" placeholder="si ademas quiero sabes sobre"></input>
+                <button class="boton-enviar">ENVIAR</button>
+            </article>
+            </div>
+        </main>
+        <footer>
+            <article id="arriba">
+                <p>_____________________</p>
+                <div class="contenedor-imagenes">
+                    <img src="../../imagenes/facebook.png" alt="Facebook.png">
+                    <img src="../../imagenes/instagram.png" alt="Instagram.png">
+                    <img src="../../imagenes/whatsapp.png" alt="Whatsapp.png">
+                    <img src="../../imagenes/gorjeo.png" alt="X.png">
+                </div>
+                <p>_____________________</p>
+            </article>
+            <article id="abajo">
+                <h1>
+                    HermanPlace
+                </h1>
+                <p>copyright @ 2025 - HermanPlace.inc</p>
+                <div id="links">
+                    <a href="">Informacion Legal</a>
+                    <p>|</p>
+                    <a href="">Politica de privacidad</a>
+                </div>
+            </article>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
