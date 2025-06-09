@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Usuario</title>
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="registrarUsuario.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <!--Inciar Sesion, Usuario y otros-->
+        <img src="../../imagenes/carritoNegro.png" alt="logo.png">
+        <h1>HermanPlace</h1>
+        <div id="opciones">
+            <a href="../../index.html">Inicio</a>
+            <a href="../listadoAnuncios/listadoAnuncios.html">Productos</a>
+            <a href="#">Vender</a>
+        </div>
+        <div id="usuario">
+            <i class="fa-solid fa-circle-user"></i>
+            <button>Registro Usuario</button>
+        </div>
+    </header>
+    <main>
+        <article>
+            <img src="../../imagenes/fotito.png" alt="carritoColor.png">
+            <section id="formulario-sesion">
+                <div>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre"><br><br>
+                    <div class="msg-error" id="msg-error-nombre" style="display: none"></div>
+
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" name="apellido"><br><br>
+                    <div class="msg-error" id="msg-error-apellido" style="display: none"></div>
+
+                    <label for="email">Correo Electrónico</label><br>
+                    <input type="text" id="email" name="email"><br><br>
+                    <div class="msg-error" id="msg-error-email" style="display: none"></div>
+
+                    <label for="contrasena">Contraseña</label><br>
+                    <input type="password" id="contrasena" name="contrasena"><br><br>
+                    <div class="msg-error" id="msg-error-contrasena" style="display: none"></div>
+                    
+                    <label for="ccontrasena">Confirmar Contraseña</label><br>
+                    <input type="password" id="ccontrasena" name="ccontrasena"><br><br>
+                    <div class="msg-error" id="msg-error-ccontrasena" style="display: none"></div>
+                    
+                    <button type="submit" onclick="verificarDatos()">Registrarse</button>
+                </div>
+                <p>¿Ya tienes una cuenta? <a href="../iniciarSesion/iniciarsesion.html">Iniciar Sesion Aquí</a></p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <article id="arriba">
+            <p>_____________________</p>
+            <div class="contenedor-imagenes">
+                <img src="../../imagenes/facebook.png" alt="Facebook.png">
+                <img src="../../imagenes/instagram.png" alt="Instagram.png">
+                <img src="../../imagenes/whatsapp.png" alt="Whatsapp.png">
+                <img src="../../imagenes/gorjeo.png" alt="X.png">
+            </div>
+            <p>_____________________</p>
+        </article>
+        <article id="abajo">
+            <h1>
+                HermanPlace
+            </h1>
+            <p>copyright @ 2025 - HermanPlace.inc</p>
+            <div id="links">
+                <a href="">Informacion Legal</a>
+                <p>|</p>
+                <a href="">Politica de privacidad</a>
+
+            </div>
+        </article>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

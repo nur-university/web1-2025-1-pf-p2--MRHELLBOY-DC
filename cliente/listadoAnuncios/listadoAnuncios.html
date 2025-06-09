@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Anuncios</title>
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="listadoAnuncios.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <!--Inciar Sesion, Usuario y otros-->
+        <img src="../../imagenes/carritoNegro.png" alt="logo.png">
+        <h1>HermanPlace</h1>
+        <div id="opciones">
+            <a href="../../index.html">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Vender</a>
+        </div>
+        <div id="usuario">
+            <i class="fa-solid fa-circle-user"></i>
+            <button onclick="cambio()">Iniciar Sesion</button>
+        </div>
+    </header>
+    <main>
+        <article id="izquierda">
+            <section id="arriba-izquierda">
+                <div id="categorias">
+                    <button>
+                        <i class="fa-solid fa-house"></i>
+                        <p>Casa</p>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-car"></i>
+                        <p>Vehiculo</p>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-laptop"></i>
+                        <p>Electronica</p>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-tshirt"></i>
+                        <p>Ropa</p>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-utensils"></i>
+                        <p>Comida</p>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <p>Juegos</p>
+                    </button>
+
+                </div>
+            </section>
+            <section id="abajo-izquierda">
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/tlf.jpg" alt="Anuncio 1">
+                            <h2>iPhone 14 Pro Max</h2>
+                            <p>con cámara profesional, y gran rendimiento.</p>
+                            <p>Precio: $1000</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/tlf1.jpg" alt="Anuncio 1">
+                            <h2>Samsung A32 </h2>
+                            <p>Semi Nuevo Con todos los accesorios.</p>
+                            <p>Precio: $400</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/tlf2.jpg" alt="Anuncio 1">
+                            <h2>Galaxy A14</h2>
+                            <p>5G Nuevo Sellado en Caja</p>
+                            <p>Precio: $500</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/refri.jpg" alt="Anuncio 1">
+                            <h2>Refrigerador</h2>
+                            <p>Samsung</p>
+                            <p>Precio: $1400</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/SofaDe3cuerpos.jpg" alt="Anuncio 1">
+                            <h2>Sofa de 3 Cuerpos</h2>
+                            <p>Sofa de tela, bien comodo</p>
+                            <p>Precio: $600</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                                        <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/tablet.jpg" alt="Anuncio 1">
+                            <h2>Tablet 2da Generacion</h2>
+                            <p>Tablet Mini Negra con Plomo</p>
+                            <p>Precio: $1000</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/tenis.jpg" alt="Anuncio 1">
+                            <h2>Tennis de Mujer</h2>
+                            <p>Color Rosas, super comodos</p>
+                            <p>Precio: $100</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/ToyotaCorolla2010.jpg" alt="Anuncio 1">
+                            <h2>Toyota Corolla 2010</h2>
+                            <p>SemiNuevo, poco uso</p>
+                            <p>Precio: $5000</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                                        <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/Vestidodefiesta.jpg" alt="Anuncio 1">
+                            <h2>Vestido</h2>
+                            <p>Vestido de Fiesta Rojo</p>
+                            <p>Precio: $300</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                                        <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/aspiradora.jpg" alt="Anuncio 1">
+                            <h2>Aspiradora</h2>
+                            <p>Semi Nueva</p>
+                            <p>Precio: $300</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/cama.jpg" alt="Anuncio 1">
+                            <h2>Cama</h2>
+                            <p>Cama Nueva de Dos Plazas</p>
+                            <p>Precio: $400</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/CamisaDeAlgodon.jpg" alt="Anuncio 1">
+                            <h2>Camisa de Algodon</h2>
+                            <p>Camisa Nueva Color Blanca.</p>
+                            <p>Precio: $150</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                     <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/carro.jpg" alt="Anuncio 1">
+                            <h2>Camioneta Frontier</h2>
+                            <p>Camineta Frontier, Semi Nueva</p>
+                            <p>Precio: $12200</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/celerio.jpg" alt="Anuncio 1">
+                            <h2>Celerio Zusuki</h2>
+                            <p>Auto Nuevo, con todos los accesorios</p>
+                            <p>Precio: $5200</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/escritorio.jpg" alt="Anuncio 1">
+                            <h2>Escritorio de Oficina</h2>
+                            <p>Escritorio de Roble, de la mas fina calidad</p>
+                            <p>Precio: $450</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="anuncio">
+                        <div class="botonera">
+                            <button class="boton-favorito"><i class="fa-solid fa-heart"></i></button>
+                            <button class="boton-mas"><i class="fa-solid fa-plus"></i></button>
+                            <button class="boton-menos"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div id="otro">
+                            <img src="../../imagenes/Mesadecomedor.jpg" alt="Anuncio 1">
+                            <h2>Mesa Para Comedor</h2>
+                            <p>Mesa de buen material, sillas incluidas</p>
+                            <p>Precio: $1000</p>
+                            <br>
+                            <button onclick="cambioDetalle()" class="boton-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+
+            </section>
+        </article>
+        <article id="derecha">
+            <div id="buscador">
+                <input type="text" placeholder="Buscar...">
+                <button id="boton-buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <section id="hermanTengoSueño">
+                <button onclick="verGuardados()">Guardados</button>
+                <button onclick="irChat()">Chats</button>
+                <button>Necesito Ayuda</button>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <article id="arriba">
+            <p>_____________________</p>
+            <div class="contenedor-imagenes">
+                <img src="../../imagenes/facebook.png" alt="Facebook.png">
+                <img src="../../imagenes/instagram.png" alt="Instagram.png">
+                <img src="../../imagenes/whatsapp.png" alt="Whatsapp.png">
+                <img src="../../imagenes/gorjeo.png" alt="X.png">
+            </div>
+            <p>_____________________</p>
+        </article>
+        <article id="abajo">
+            <h1>
+                HermanPlace
+            </h1>
+            <p>copyright @ 2025 - HermanPlace.inc</p>
+            <div id="links">
+                <a href="">Informacion Legal</a>
+                <p>|</p>
+                <a href="">Politica de privacidad</a>
+            </div>
+        </article>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

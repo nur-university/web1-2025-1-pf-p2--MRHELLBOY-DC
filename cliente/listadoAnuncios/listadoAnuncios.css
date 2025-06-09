@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#izquierda{
+    width: 100%;
+}
+
+.anuncio{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 90%;
+    margin: 10px;
+    padding: 15px;
+    height: 380px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.anuncio img {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+#otro{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#otro h2, img, p{  
+    margin: 0;
+    padding: 0;
+}
+
+#derecha{
+    height: 130%;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(232, 232, 232);
+} 
+
+#derecha section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hermanTengoSueño button{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    background-color: #3159ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#buscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#arriba-izquierda{
+    background-color: rgb(113, 154, 243);
+}
+
+#categorias{
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#categorias button{
+    background-color: rgb(113, 154, 243);
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 05px;
+    cursor: pointer;
+}
+
+#abajo-izquierda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    margin: 0;
+}
+
+.botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.botonera button{
+    margin-right: 7px;
+}
+
+.boton-detalle{
+    width: 100%;
+    height: 30px;
+    background-color: #3159ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#usuario{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#usuario button{
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#usuario i{
+    margin-right: 10px;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    *{
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#izquierda{
+    width: 84%;
+}
+
+.anuncio{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: calc(50% - 50px);
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.anuncio img {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+#otro{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#otro h2, img, p{  
+    margin: 0;
+    padding: 0;
+}
+
+#derecha{
+    height: 507px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(232, 232, 232);
+} 
+
+#derecha section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hermanTengoSueño button{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    background-color: #3159ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#buscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#arriba-izquierda{
+    background-color: rgb(113, 154, 243);
+}
+
+#categorias{
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 40px;
+}
+
+#categorias button{
+    background-color: rgb(113, 154, 243);
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 05px;
+    cursor: pointer;
+}
+
+#abajo-izquierda {
+    display: flex;
+    max-height: 760px;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+.botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.botonera button{
+    margin-right: 7px;
+}
+
+.boton-detalle{
+    width: 100%;
+    height: 30px;
+    background-color: #3159ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#usuario{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#usuario button{
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#usuario i{
+    margin-right: 10px;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    *{
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content:right;
+}
+
+#izquierda{
+    width: 84%;
+}
+
+.anuncio{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: calc(50% - 50px);
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.anuncio img {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+#otro{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#otro h2, img, p{  
+    margin: 0;
+    padding: 0;
+}
+
+#derecha{
+    height: 907px;
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(232, 232, 232);
+    padding-top: 50px;
+} 
+
+#derecha section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hermanTengoSueño button{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    background-color: #3159ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#buscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#arriba-izquierda{
+    background-color: rgb(113, 154, 243);
+}
+
+#categorias{
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+#categorias button{
+    background-color: rgb(113, 154, 243);
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 05px;
+    cursor: pointer;
+}
+
+#abajo-izquierda {
+    display: flex;
+    max-height: 760px;
+    overflow-y: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.botonera button{
+    margin-right: 7px;
+}
+
+.boton-detalle{
+    width: 100%;
+    height: 30px;
+    background-color: #3159ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#usuario{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#usuario button{
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#usuario i{
+    margin-right: 10px;
+}
+    
+}

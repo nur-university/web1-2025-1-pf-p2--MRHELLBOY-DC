@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="cliente/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Pagina Principal</title>
+</head>
+<body>
+    <header>
+        <!--Inciar Sesion, Usuario y otros-->
+        <img src="imagenes/carritoNegro.png" alt="logo.png">
+        <h1>HermanPlace</h1>
+        <div id="opciones">
+            <a href=" ">Inicio</a>
+            <a href="cliente/listadoAnuncios/listadoAnuncios.html">Productos</a>
+            <a href="#">Vender</a>
+        </div>
+        <div id="usuario">
+            <i class="fa-solid fa-circle-user"></i>
+            <button onclick="cambio()">Iniciar Sesion</button>
+        </div>
+    </header>
+    <main>
+        <!--Presentación-->
+        <div id="presentacion">
+            <section id="textoPresentacion">
+                <h2>Bienvenido a HermanPlace</h2>
+                <p>Tu lugar de confianza para comprar y vender productos.</p>
+            </section>
+            <img src="imagenes/carritoColor.png" alt="Logo.png">
+        </div>
+        
+        <!--Destacados-->
+        <article class="barras">
+            <div class="contenedor-barras">
+                <h2 class="titulo-barras">Los más buscados</h2>
+                <div class="contenedor-productos">
+                    <section class="producto">
+                        <img src="imagenes/aspiradora.jpg" alt="otro.png">
+                        <h4>Aspiradora</h4>
+                        <h4>300$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                    <section class="producto">
+                        <img src="imagenes/cama.jpg" alt="otro.png">
+                        <h4>Cama</h4>
+                        <h4>Descripcion</h4>
+                        <h4>600$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                    <section class="producto">
+                        <img src="imagenes/CamisaDeAlgodon.jpg" alt="otro.png">
+                        <h4>Camisa De Algodon</h4>
+                        <h4>400$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                    <section class="producto">
+                        <img src="imagenes/carro.jpg" alt="otro.png">
+                        <h4>Camioneta Frontier</h4>
+                        <h4>19000$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                    <section class="producto">
+                        <img src="imagenes/celerio.jpg" alt="otro.png">
+                        <h4>Auto Zusuki</h4>
+                        <h4>Celerio</h4>
+                        <h4>10000$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                    <section class="producto">
+                        <img src="imagenes/chaqueta.jpg" alt="otro.png">
+                        <h4>Chaqueta</h4>
+                        <h4>150$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                </div>
+            </div>
+        </article>
+        <!--Los Mas Vendidos-->
+        <article class="barras">
+            <div class="contenedor-barras">
+                <h2 class="titulo-barras">Los más vendidos</h2>
+                <div class="contenedor-productos">
+                    <section class="producto">
+                        <img src="imagenes/escritorio.jpg" alt="otro.png">
+                        <h4>Escritorio Oficina</h4>
+                        <h4>700$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                    <section class="producto">
+                        <img src="imagenes/LicuadoraOster.jpg" alt="otro.png">
+                        <h4>LicuadoraOster</h4>
+                        <h4>320$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                    <section class="producto">
+                        <img src="imagenes/Mesadecomedor.jpg" alt="otro.png">
+                        <h4>Mesa Comedor</h4>
+                        <h4>450%</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                    <section class="producto">
+                        <img src="imagenes/microondas_lg.jpg" alt="otro.png">
+                        <h4>Microondas LG</h4>
+                        <h4>1000$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                     <section class="producto">
+                        <img src="imagenes/moto.jpg" alt="otro.png">
+                        <h4>Moto Honda</h4>
+                        <h4>2500$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                    <section class="producto">
+                        <img src="imagenes/pc.jpg" alt="otro.png">
+                        <h4>Laptop HP</h4>
+                        <h4>3000$</h4>
+                        <button onclick="irDetalle()">Ver detalles</button>
+                    </section>
+                </div>
+            </div>
+        </article>
+        <article id="video">
+            <h2>¿Quieres Aprender a usar HermanPlace?</h2>
+            <iframe width="1120" height="630" 
+            src="https://www.youtube.com/embed/J8psQrCsU-M" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+        
+        </article>
+    </main>
+    <footer>
+        <!--Direcciones, links, redes, logos, etc-->
+        <article id="arriba">
+            <p>_____________________</p>
+            <div class="contenedor-imagenes">
+                <img src="imagenes/facebook.png" alt="Facebook.png">
+                <img src="imagenes/instagram.png" alt="Instagram.png">
+                <img src="imagenes/whatsapp.png" alt="Whatsapp.png">
+                <img src="imagenes/gorjeo.png" alt="X.png">
+            </div>
+            <p>_____________________</p>
+        </article>
+        <article id="abajo">
+            <h1>
+                HermanPlace
+            </h1>
+            <p>copyright @ 2025 - HermanPlace.inc</p>
+            <div id="links">
+                <a href="">Informacion Legal</a>
+                <p>|</p>
+                <a href="">Politica de privacidad</a>
+
+            </div>
+        </article>
+    </footer>
+    <script src="cliente/principal/script.js"></script>
+</body>
+</html>
